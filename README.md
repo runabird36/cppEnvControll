@@ -3,23 +3,26 @@
 ---
 <br>
 <br>
-### Step 01. CMake : Quick start
+
+#### Step 01. CMake : Quick start
 
 <br>
-<br>
-### 02. make project directory
-    ```
-    - main.cpp
-    - CMakeLists.txt
-    ----source
-        - headerfile.h
-        - sourcefile.cpp
-    ```
+
+#### 02. make project directory
+```
+- main.cpp
+- CMakeLists.txt
+----source
+    - headerfile.h
+    - sourcefile.cpp
+    
+```
+
 
 <br>
-<br>
-### Step 03. include_directories("${CMAKE_SOURCE_DIR}/source") 와 add_executable()에 추가하고자하는 cpp 파일 입력
-    ```
+
+#### Step 03. include_directories("${CMAKE_SOURCE_DIR}/source") 와 add_executable()에 추가하고자하는 cpp 파일 입력
+```
     cmake_minimum_required(VERSION 3.0.0)
     project(cppEnv02 VERSION 0.1.0)
 
@@ -36,21 +39,22 @@
     set(CPACK_PROJECT_NAME ${PROJECT_NAME})
     set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
     include(CPack)
-
 ```
+<br>
+
+#### Step 04. cmake configure and cmake build 
+
+<br>
+
+#### Step 05. execute 실행파일
+
 
 <br>
 <br>
-### Step 04. cmake configure and cmake build 
+<br>
+<br>
+<br>
 
-<br>
-<br>
-### Step 05. execute 실행파일
-
-
-<br>
-<br>
-<br>
 
 
 # Setting Cpp development enviroment [Windows]
@@ -58,7 +62,7 @@
 <br>
 <br>
 
-### Step 1. Install prerequisites : Git , CMake , Visual Studio , vcpkg , vsCode
+#### Step 1. Install prerequisites : Git , CMake , Visual Studio , vcpkg , vsCode
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [CMake](https://cmake.org/install/)
 - [Visual Studio](https://code.visualstudio.com/download)
@@ -98,7 +102,7 @@
 <br>
 <br>
 
-### Step 2. make main.cpp 
+#### Step 2. make main.cpp 
     ```
     # test code
     #include <sqlite3.h>
@@ -114,7 +118,7 @@
 <br>
 <br>
 
-### Step 3. make CMakeLists.txt by 'CMake: Quick Start'
+#### Step 3. make CMakeLists.txt by 'CMake: Quick Start'
 - Default CMakeLists.txt contents
     ```
     cmake_minimum_required(VERSION 3.0.0)
@@ -154,14 +158,14 @@
 <br>
 <br>
 
-### Step 4. Do 'CMake: Build'
+#### Step 4. Do 'CMake: Build'
 - This make Debug folder and under that folder, there is projectName.exe file
 
 <br>
 <br>
 <br>
 
-### Step 5. edit .vscode > launch.json
+#### Step 5. edit .vscode > launch.json
 - ctrl + shift + P > type 'launch.json'
 - add below 
     ```
@@ -194,10 +198,10 @@
 <br>
 
 
-### Step 6. F5 : Debugging : coding
+#### Step 6. F5 : Debugging : coding
 
 
-### Step 7. Build a Release version
+#### Step 7. Build a Release version
 
 
 ---
